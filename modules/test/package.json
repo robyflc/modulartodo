@@ -1,0 +1,20 @@
+{
+  "name": "test module",
+  "version": "0.0.1",
+  "author": "Robson <contato@dezmin.com.br>",
+  "description": "um módulo para teste",
+  "main": "",
+  "repository": {},
+  "keywords": [
+    "test"
+  ],
+  "reqDependencies" : {
+    "ha"  :  "ha",
+    "he"  :  "he",
+    "css"  :  "css/style.css",
+    "js"   :  "js/app.js",
+    "view" :  "views/view.tpl"
+  },
+  "license": "Proprietary",
+  "engines": {}
+}
