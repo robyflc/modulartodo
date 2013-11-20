@@ -9,8 +9,8 @@
     "test"
   ],
   "reqModDependencies" : {
-    "ha"  :  "ha",
-    "he"  :  "he"
+    "hi"  :  "hi",
+    "ho"  :  "ho"
   },
   "reqFileDependencies" : {
     "css"  :  "css/style.css",

@@ -28,7 +28,21 @@ var required = {
 function require(name){
     if (required.modules.indexOf(name) < 0){
         $.getJSON('./modules/'+name+'/package.json', function(data){
-            var data_urls = data.reqDependencies;
+            //Deal with dependent modules
+            var modules = data.reqModDependencies;
+            window.modules = modules;
+            if (Object.size(modules) > 0){
+                for (mod in modules){
+                    if (required.modules.indexOf(mod) < 0){
+                        require(modules[mod]);
+                        //Stop actual require and add module to stack
+                        required.stack.push(name);
+                        return;
+                    }
+                }
+            }
+            //Deal with dependent files
+            var data_urls = data.reqFileDependencies;
             var len = Object.size(data_urls);
             var i = 0;
             for (el in data_urls){
@@ -61,6 +75,12 @@ function require(name){
                             $("body").trigger(name+"ready");
                             console.log(name+" ready !");
                             required.modules.push(name);
+                            
+                            //Since module is ready check if there were modules dependent on it
+                            if (required.stack.length >0){
+                                require(required.stack.pop());
+                            }
+                                
                         }
                     });
                 } else {

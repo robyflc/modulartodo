@@ -1,0 +1,4 @@
+
+function ha (){
+    alert('ha');
+}

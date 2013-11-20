@@ -8,10 +8,6 @@
   "keywords": [
     "test"
   ],
-  "reqModDependencies" : {
-    "ha"  :  "ha",
-    "he"  :  "he"
-  },
   "reqFileDependencies" : {
     "css"  :  "css/style.css",
     "js"   :  "js/app.js",
