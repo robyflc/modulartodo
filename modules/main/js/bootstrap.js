@@ -93,3 +93,10 @@ function require(name){
     }
 }
 
+/* 
+ * Actual bootstrap function
+ */
+$(function(){
+    $('title').text('Modular Todo Example');
+    require('main');
+});

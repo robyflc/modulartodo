@@ -1,17 +1,15 @@
 {
-  "name": "test module",
+  "name": "Underscore module",
   "version": "0.0.1",
   "author": "Robson <contato@dezmin.com.br>",
-  "description": "um módulo para teste",
+  "description": "Underscore",
   "main": "",
   "repository": {},
   "keywords": [
-    "test"
+    "modular", "todo"
   ],
   "reqFileDependencies" : {
-    "css"  :  "css/style.css",
-    "js"   :  "js/app.js",
-    "view" :  "views/view.tpl"
+    "js"   :  "js/underscore.js"
   },
   "license": "Proprietary",
   "engines": {}

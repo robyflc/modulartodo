@@ -1,4 +1,0 @@
-
-function ha (){
-    alert('ha');
-}

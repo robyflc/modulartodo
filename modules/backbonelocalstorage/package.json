@@ -1,0 +1,19 @@
+{
+  "name": "Backbone.localstorage module",
+  "version": "0.0.1",
+  "author": "Robson <contato@dezmin.com.br>",
+  "description": "Backbone.localstorage",
+  "main": "",
+  "repository": {},
+  "keywords": [
+    "modular", "todo"
+  ],
+  "reqModDependencies" : {
+    "backbone":"backbone"    
+  },
+  "reqFileDependencies" : {
+    "js"   :  "js/backbone.localStorage.js"
+  },
+  "license": "Proprietary",
+  "engines": {}
+}

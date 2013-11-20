@@ -1,0 +1,22 @@
+{
+  "name": "Main Modular-Todo module",
+  "version": "0.0.1",
+  "author": "Robson <contato@dezmin.com.br>",
+  "description": "Localtodos using modular",
+  "main": "",
+  "repository": {},
+  "keywords": [
+    "modular", "todo"
+  ],
+  "reqModDependencies" : {
+    "backbone":"backbone",    
+    "backbonelocalstorage":"backbonelocalstorage"    
+  },
+  "reqFileDependencies" : {
+    "view" :  "views/todos.html",
+    "css"  :  "css/todos.css",
+    "js"   :  "js/main.js"
+  },
+  "license": "Proprietary",
+  "engines": {}
+}

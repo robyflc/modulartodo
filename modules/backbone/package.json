@@ -1,21 +1,18 @@
 {
-  "name": "test module",
+  "name": "Backbone module",
   "version": "0.0.1",
   "author": "Robson <contato@dezmin.com.br>",
-  "description": "um módulo para teste",
+  "description": "Backbone",
   "main": "",
   "repository": {},
   "keywords": [
-    "test"
+    "modular", "todo"
   ],
   "reqModDependencies" : {
-    "hi"  :  "hi",
-    "ho"  :  "ho"
+    "underscore":"underscore"    
   },
   "reqFileDependencies" : {
-    "css"  :  "css/style.css",
-    "js"   :  "js/app.js",
-    "view" :  "views/view.tpl"
+    "js"   :  "js/backbone.js"
   },
   "license": "Proprietary",
   "engines": {}
